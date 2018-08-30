@@ -8,7 +8,7 @@ Wizard <- R6::R6Class(
 
     prepare_question = function(name) {
 
-      private$questions_f[[name]] <- wizard::prepare_question(
+      private$questions_f[[name]] <- prepare_question(
         question = private$questions[[name]][["question"]],
         answers  = private$questions[[name]][["answers"]],
         default  = private$questions[[name]][["default"]],
@@ -55,6 +55,7 @@ Wizard <- R6::R6Class(
         }
 
         private$questions <- yaml::read_yaml(questions)
+
         private$prepare_all_questions()
 
       } else{
