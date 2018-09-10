@@ -4,6 +4,8 @@ Title: tools to easily create dialog in R console
 Version: 0.1.0
 Author: Guillaume Bouzille
 Maintainer: Guillaume Bouzille <guillaume.bouzille@univ-rennes1.fr>
+Description:  tools to easily create dialog in R console
 License: N/A
 Encoding: UTF-8
 LazyData: true
+Imports: R6, yaml
